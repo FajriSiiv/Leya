@@ -103,7 +103,7 @@ const OurPlatform = () => {
   return (
     <div className="grid grid-cols-2 pb-10 gap-10">
       <div className="flex flex-col">
-        <p className="text-sm">Our latform</p>
+        <p className="text-sm pb-2">Our latform</p>
         <p className="text-5xl font-semibold leading-[0.85] mt-2">
           Your new legal workspace.
         </p>
