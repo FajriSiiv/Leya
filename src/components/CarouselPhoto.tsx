@@ -21,7 +21,7 @@ export function CarouselPhoto() {
             <img
               src={_}
               alt={`${index}`}
-              className="w-full h-full object-cover aspect-[2/3]"
+              className="w-full h-full object-cover aspect-[2/3] object-center"
             />
           </CarouselItem>
         ))}

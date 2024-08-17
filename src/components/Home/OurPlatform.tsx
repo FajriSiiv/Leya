@@ -101,17 +101,17 @@ const OurPlatform = () => {
   const [platComp, setPlatComp] = useState("item-1");
 
   return (
-    <div className="grid grid-cols-2 pb-10 gap-10">
+    <div className="grid grid-cols-2 pb-10 gap-10 max-lg:grid-rows-2 max-lg:grid-cols-1">
       <div className="flex flex-col">
         <p className="text-sm pb-2">Our latform</p>
-        <p className="text-5xl font-semibold leading-[0.85] mt-2">
+        <p className="text-5xl font-semibold leading-[0.85] mt-2 max-md:text-2xl">
           Your new legal workspace.
         </p>
         <div className=" mt-6">
           <AccordionPlatform setPlatComp={setPlatComp} />
         </div>
       </div>
-      <div className="bg-slate-950/5 rounded-lg p-5">
+      <div className="bg-slate-950/5 rounded-lg p-5 max-md:h-fit max-md:py-10">
         <div className="flex flex-col gap-y-5">
           {platComp === "item-1" ? (
             <>

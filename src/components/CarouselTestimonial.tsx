@@ -42,20 +42,24 @@ export function CarouselTestimonial() {
 
   return (
     <Carousel
-      className="w-full"
+      className="w-full max-md:py-10"
       plugins={[plugin.current]}
       opts={{ loop: true }}
     >
       <CarouselContent>
         {TestimonialText.map((_, index) => (
-          <CarouselItem key={index}>
+          <CarouselItem key={_.id}>
             <>
               <div className="flex flex-col gap-y-10 ">
-                <h3 className="text-3xl">{_.textTestimonial}</h3>
+                <h3 className="text-3xl max-md:text-xl">{_.textTestimonial}</h3>
               </div>
               <div className="flex flex-col pt-5">
-                <span className="text-lg font-semibold ">{_.namePeople}</span>
-                <span className="text-primary/70">{_.nameBrand}</span>
+                <span className="text-lg font-semibold max-md:text-base">
+                  {_.namePeople}
+                </span>
+                <span className="text-primary/70 max-md:text-sm">
+                  {_.nameBrand}
+                </span>
               </div>
             </>
           </CarouselItem>

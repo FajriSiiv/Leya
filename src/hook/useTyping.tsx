@@ -43,7 +43,11 @@ const TypingHome = () => {
     return () => clearTimeout(typingTimeout);
   }, [index, isDeleting, currentSentence]);
 
-  return <p className="py-1 w-[500px] text-sm font-semibold">{text}</p>;
+  return (
+    <p className="py-1 w-[500px] text-sm font-semibold max-md:w-[300px] max-md:text-[10px]">
+      {text}
+    </p>
+  );
 };
 
 export default TypingHome;

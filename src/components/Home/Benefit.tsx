@@ -34,10 +34,12 @@ const Benefit = () => {
   };
 
   return (
-    <div className="py-20 px-10 mb-10 bg-gradient-to-tr to-primary/5 from-orange-200/80 from-30% rounded-lg">
+    <div className="py-20 px-10 mb-10 bg-gradient-to-tr to-primary/5 from-orange-200/80 from-30% rounded-lg max-md:px-5">
       <p className="text-sm mb-5">Benefits</p>
-      <h2 className="text-4xl font-semibold">Enhancing legal operations.</h2>
-      <div className="grid grid-cols-3 mt-5 gap-5">
+      <h2 className="text-4xl font-semibold max-md:text-xl">
+        Enhancing legal operations.
+      </h2>
+      <div className="grid grid-cols-3 mt-5 gap-5 max-md:grid-rows-3 max-md:grid-cols-1">
         {contentBenefit.map((_, index) => (
           <CardBenefit
             title={_.title}
