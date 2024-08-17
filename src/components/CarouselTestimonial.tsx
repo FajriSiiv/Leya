@@ -16,21 +16,21 @@ const TestimonialText = [
     namePeople: "Andy Ramos Partner",
     nameBrand: "Pérez-Llorca",
     textTestimonial:
-      "Leya has proven to be the right tool for our objectives and needs,both in terms of efficiency and security.",
+      "Zeya has proven to be the right tool for our objectives and needs,both in terms of efficiency and security.",
     id: 1,
   },
   {
     namePeople: "Andy Ramos Partner 1 ",
     nameBrand: "Pérez-Llorca",
     textTestimonial:
-      "Leya has proven to be the right tool for our objectives and needs,both in terms of efficiency and security.",
+      "Zeya has proven to be the right tool for our objectives and needs,both in terms of efficiency and security.",
     id: 2,
   },
   {
     namePeople: "Andy Ramos Partner 2",
     nameBrand: "Pérez-Llorca",
     textTestimonial:
-      "Leya has proven to be the right tool for our objectives and needs,both in terms of efficiency and security.",
+      "Zeya has proven to be the right tool for our objectives and needs,both in terms of efficiency and security.",
     id: 3,
   },
 ];

@@ -6,12 +6,12 @@ const SectionMission = () => {
   const [lettersToChange, setLettersToChange] = useState(0);
   const refElement = useRef(null);
 
-  const textLeyaMission =
-    "Leya is an AI-powered workspace designed for law firms and legal professionals. Automate your repetitive tasks and access public sources and your own data in one single platform.";
+  const textZeyaMission =
+    "Zeya is an AI-powered workspace designed for law firms and legal professionals. Automate your repetitive tasks and access public sources and your own data in one single platform.";
 
   const textSplit = useMemo(
-    () => textLeyaMission.split(" "),
-    [textLeyaMission]
+    () => textZeyaMission.split(" "),
+    [textZeyaMission]
   );
 
   const { scrollYProgress } = useScroll({
@@ -36,7 +36,7 @@ const SectionMission = () => {
 
   return (
     <div className="py-20 w-full" ref={refElement}>
-      <div className="mb-2 text-sm">Leya</div>
+      <div className="mb-2 text-sm">Zeya</div>
       <div className="flex flex-wrap">
         {textSplit.map((text, index) => (
           <motion.span

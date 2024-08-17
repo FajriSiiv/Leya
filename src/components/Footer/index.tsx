@@ -2,8 +2,27 @@ import React from "react";
 import Section from "../Section";
 import ButtonDemon from "../ButtonDemon";
 import { Github, Instagram, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
+  const navLinks = [
+    {
+      name: "Security",
+      url: "/security",
+      id: 1,
+    },
+    {
+      name: "Careers",
+      url: "/careers",
+      id: 2,
+    },
+    {
+      name: "Customers",
+      url: "/customers",
+      id: 3,
+    },
+  ];
+
   return (
     <Section>
       <div className="max-w-[1024px] mx-auto">
@@ -12,7 +31,7 @@ const Footer = () => {
             Get started
           </div>
           <div className="flex flex-col gap-8 text-center">
-            <p className="text-4xl font-semibold">
+            <p className="text-4xl font-semibold max-md:text-xl">
               Let's make your legal work flow
             </p>
             <p className="text-xs text-white/45">Book a demo to get started</p>
@@ -22,18 +41,20 @@ const Footer = () => {
         </div>
       </div>
       <footer className="flex justify-between mt-28 pb-20 max-md:flex-col gap-10">
-        <div className="text-2xl font-medium">Leya</div>
+        <div className="text-2xl font-medium">Zeya</div>
         <ul className="flex gap-6 text-sm font-medium items-center max-md:flex-col max-md:items-start ">
-          <li>Legal</li>
-          <li>Blog</li>
-          <li>Comunity</li>
-          <li>Career</li>
-          <li>Security</li>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <Link href={link.url}>{link.name}</Link>
+            </li>
+          ))}
         </ul>
         <div className="text-2xl font-medium flex gap-x-4">
-          <Linkedin />
-          <Instagram />
-          <Github />
+          <Linkedin className="hover:scale-110 hover:-translate-y-2 transition-all" />
+          <Instagram className="hover:scale-110 hover:-translate-y-2 transition-all" />
+          <Link href="https://github.com/FajriSiiv" target="_blank">
+            <Github className="hover:scale-110 hover:-translate-y-2 transition-all" />
+          </Link>
         </div>
       </footer>
 

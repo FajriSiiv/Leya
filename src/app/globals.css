@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-square {
+  background-image: radial-gradient(
+      circle closest-corner at 50% 50%,
+      #15151580,
+      black
+    ),
+    url(https://cdn.prod.website-files.com/652693846fc363a3648e989e/652f9f54e2434b632b9707c3_grid%20pattern.svg);
+  background-position: 0 0, 50%;
+  background-repeat: repeat, repeat;
+  background-size: auto, auto;
+  background-attachment: scroll, fixed;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
