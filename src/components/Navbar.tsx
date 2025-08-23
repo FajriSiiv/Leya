@@ -10,7 +10,6 @@ const Navbar = () => {
   const params = usePathname();
   const scrollDirection = useScrollNavbar();
   const [menuBar, setMenuBar] = useState(false);
-  console.log(params);
 
   const showNavbar = useMemo(() => {
     return scrollDirection === "up" ? "translate-y-0" : "-translate-y-full";
@@ -93,9 +92,8 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`border rounded-2xl w-full flex justify-between items-center py-1 px-5 backdrop-blur-[1px] saturate-100 bg-white/90 mt-5 transition-all ease-linear  ${
-          menuBar ? "translate-y-0" : "-translate-y-[300%]"
-        }`}
+        className={`border rounded-2xl w-full flex justify-between items-center py-1 px-5 backdrop-blur-[1px] saturate-100 bg-white/90 mt-5 transition-all ease-linear  ${menuBar ? "translate-y-0" : "-translate-y-[300%]"
+          }`}
       >
         <ul className="flex flex-col gap-y-5 w-full py-5">
           {navLinks.map((link) => (
