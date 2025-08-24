@@ -1,12 +1,12 @@
 import Section from "@/components/Section";
 
 import React from "react";
-import SectionMission from "../components/Home/SectionMission";
-import OurPlatform from "../components/Home/OurPlatform";
-import Testimonial from "../components/Home/Testimonial";
-import Benefit from "../components/Home/Benefit";
-import OpenPosition from "../components/Home/OpenPosition";
+import OurPlatform from "@/components/Home/OurPlatform";
+import Testimonial from "@/components/Home/Testimonial";
+import Benefit from "@/components/Home/Benefit";
+import OpenPosition from "@/components/Home/OpenPosition";
 import MainContent from "@/components/Home/MainContent";
+import SectionMission from "@/components/Home/SectionMission";
 
 export default function Homepage() {
   return (
